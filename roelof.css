@@ -1,0 +1,77 @@
+:root {
+    --gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%); 
+    --pale_blue: hsl(243, 100%, 93%); 
+    --grayish_blue: hsl(229, 7%, 55%); 
+    --dark_blue: hsl(228, 56%, 26%); 
+    --very_dark_blue: hsl(229, 57%, 11%);
+}
+
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh; 
+    background: url(images/bg-mobile.png), var(--dark_blue);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;  
+}
+
+p{
+    margin-bottom: 20px;
+}
+
+.logos {
+    padding-top: 40px;
+    padding-left: 40px;
+    margin-bottom: 20px; 
+    width: 320px;
+    background-color: var(--dark_blue);
+    border-radius: 10px; 
+    border-top-right-radius: 50px;   
+}
+
+.logo {
+    margin-bottom: 30px;
+}
+
+.action_border{
+    width: 50px; 
+    height: 50px;  
+    background-color: var(--very_dark_blue);
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    border-radius: 10px;   
+}
+
+.action_logos{
+    display: flex; 
+    flex-direction: row; 
+    gap: 20px; 
+}
+
+.data {
+    background-color: var(--dark_blue);
+    padding-left: 15px;
+    padding-top: 50px; 
+    color: var(--grayish_blue);   
+}
+
+.bold{
+    font-weight: 700;
+    color: var(--pale_blue);  
+}
+
+
+
+
+
+

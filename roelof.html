@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Fylo data storage component</title>
+  <link href="./roelof.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="logos">
+            <img src="./images/logo.svg" class="logo">
+            <div class="action_logos">
+                <div class="action_border">
+                    <img src="./images/icon-document.svg" class="action">
+                </div>
+                <div class="action_border">    
+                    <img src="./images/icon-folder.svg" class="action">
+                </div>
+                <div class="action_border">
+                    <img src="./images/icon-upload.svg" class="action">
+                </div>    
+            </div>
+        </div>
+        <div class="data">
+            <p>You’ve used <span class="bold"> 815 GB </span> of your storage</p>
+            <input type="range" min="0" max="1000" value="815" class="slider" disabled>
+            <div class="numbers">
+                <div class="left_number">0GB</div>
+                <div class="right_number">1000GB</div>
+            </div>
+        </div>
+        <div class="output_box">
+            <span class="number">185</span> GB Left
+        </div>    
+    </div>
+</body>
+</html>
