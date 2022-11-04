@@ -1,5 +1,4 @@
 :root {
-    --gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%); 
     --pale_blue: hsl(243, 100%, 93%); 
     --grayish_blue: hsl(229, 7%, 55%); 
     --dark_blue: hsl(228, 56%, 26%); 
@@ -20,11 +19,16 @@ body {
     background-position: bottom;
     display: flex; 
     align-items: center; 
-    justify-content: center;  
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;  
 }
 
 p{
     margin-bottom: 20px;
+}
+
+.container{
+    position: relative; 
 }
 
 .logos {
@@ -62,7 +66,9 @@ p{
     background-color: var(--dark_blue);
     padding-left: 15px;
     padding-top: 50px; 
-    color: var(--grayish_blue);   
+    color: var(--grayish_blue);
+    text-align: center;
+    border-radius: 5px;    
 }
 
 .bold{
@@ -70,6 +76,103 @@ p{
     color: var(--pale_blue);  
 }
 
+.slider {
+    /* deze 3 dingen heb je nodig voor de slider  */
+	-webkit-appearance: none;
+	-moz-appearance: none;
+    appearance: none;
+	width: 230px;
+	height: 14px;
+    /* dit laat de echte slider niet zien */
+	 background: transparent; 
+    border-radius: 10px;
+	padding-left: 0;
+    padding-bottom: 2px;
+    margin-left: -1px;
+}
+
+.storage-bar-size {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 150px;/* ruimte tussen de 2 teksten*/
+}
+.storage-bar { /* buiten kant van de bar*/
+    display: fle x;
+    flex-direction: column;
+    height: 18px;/*hoogte van de buitenste bar */
+    padding: 2px; /*de rand er binnen in*/
+    background-color: var(--very_dark_blue);
+    border-radius: 10px;
+    width: 280px; 
+}
+.storageBarFill {
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%)); 
+    z-index: 4;
+    height: 18px;
+    width: 230px;   
+    border-radius: 25px;
+    padding: 1px;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 20px; /* Set a specific slider handle width */
+    height: 20px; /* Slider handle height */
+    background: white; /* White background */
+    cursor: pointer;
+    border-radius:30px;  /* Cursor on hover */
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: white; /* White background */
+    cursor: pointer; /* Cursor on hover */
+    border-radius: 30px; 
+  }
+
+  .numbers{
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    width: 280px; 
+    color: var(--pale_blue);
+    padding-bottom: 50px;  
+  }
+
+  .output_box {
+    position: absolute;
+    margin-bottom: -450px;  
+    background-color: white;
+    width: 200px;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px; 
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+    display: flex; 
+    flex-direction: row; 
+   }
+
+  .number {
+    font-size: 48px;
+    font-weight: 700;
+    color: black;
+    padding-right: 15px;   
+  }
+
+  .text{
+    color: var(--grayish_blue); 
+    margin-top: 25px; 
+  }
+
+
+  
 
 
 
