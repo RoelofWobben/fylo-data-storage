@@ -171,10 +171,70 @@ p{
     margin-top: 25px; 
   }
 
+  @media screen and (min-width: 1000px){
 
-  
+    body{
+        background: var(--very_dark_blue) url('./images/bg-desktop.png') bottom left no-repeat;
+        background-size: 100% 50%; 
+          
+    }
 
+    p {
+        text-align: left; 
+    }
 
+    .container {
+        width: 1000px; 
+        display: flex; 
+        flex-direction: row; 
+    }
 
+    .logos{
+        margin-right: 40px;
+        margin-bottom: 0px; 
+        width: 400px;
+        padding-top: 80px;
+        border-top-right-radius: 120px;   
 
+     
+    }
 
+    .data {
+        width: 600px;
+        height: 214px;
+        margin-top: 40px;  
+    }
+
+    .storage-bar{
+        width: 520px; 
+    }
+
+    .storageBarFill {
+        width: 424px; 
+    }
+
+    .slider{
+        width: 520px; 
+    }
+
+    .output_box{
+        position: absolute;
+        left: 950px; 
+        top: 375px; 
+        padding-bottom: 0px; 
+    }
+
+    .output_box::after {
+        content: '';
+        position: absolute;
+        bottom: -20px;
+        left: 170px;
+        width: 0;
+        height: 0px;
+        border: 30px solid transparent; /* grote pointer */ 
+        border-top-color: white; /* kleur pointer */ 
+        border-bottom: 0;
+        border-right: 0; /* welke kant moet de schuine kant */ 
+    }
+
+}
