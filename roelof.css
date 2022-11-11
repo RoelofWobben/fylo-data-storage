@@ -81,7 +81,7 @@ p{
 	-webkit-appearance: none;
 	-moz-appearance: none;
     appearance: none;
-	width: 230px;
+	width: 280px;
 	height: 14px;
     /* dit laat de echte slider niet zien */
 	 background: transparent; 
@@ -101,7 +101,7 @@ p{
     width: 150px;/* ruimte tussen de 2 teksten*/
 }
 .storage-bar { /* buiten kant van de bar*/
-    display: fle x;
+    display: flex;
     flex-direction: column;
     height: 18px;/*hoogte van de buitenste bar */
     padding: 2px; /*de rand er binnen in*/
@@ -113,7 +113,6 @@ p{
     background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%)); 
     z-index: 4;
     height: 18px;
-    width: 230px;   
     border-radius: 25px;
     padding: 1px;
 }
@@ -206,20 +205,20 @@ p{
     }
 
     .storage-bar{
-        width: 520px; 
+        width: 540px; 
     }
 
     .storageBarFill {
-        width: 424px; 
+        transition: 2s; 
     }
 
     .slider{
-        width: 520px; 
+        width: 540px; 
     }
 
     .output_box{
         position: absolute;
-        left: 950px; 
+        left: 960px; 
         top: 375px; 
         padding-bottom: 0px; 
     }
@@ -236,5 +235,13 @@ p{
         border-bottom: 0;
         border-right: 0; /* welke kant moet de schuine kant */ 
     }
+
+    .numbers {
+        width: 520px; 
+    }
+
+   
+
+    
 
 }
