@@ -114,8 +114,8 @@ p{
     z-index: 4;
     height: 18px;
     border-radius: 25px;
-    transition-property: scaleX(1); 
-    transition-duration: 3s;
+    animation: grow-slider 3s normal forwards ease-in-out;
+    transform-origin: left;
 }
 
 @keyframes grow-slider {
