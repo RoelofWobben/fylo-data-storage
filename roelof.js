@@ -25,16 +25,14 @@ slider.addEventListener('input',  () => {
     tekst.innerHTML = `${slider.value} GB `; 
     // Zet de waarde in de balloon 
     balloon.innerHTML = `${(1000 - slider.value).toFixed(1)}`;
-    // aanpassen rode balk 
-    const width_bar = (slider.value * width) / 1000;
-    bar.style.width = width_bar + 'px';
-})
+    calculateBar();
+}); 
 
 
 const calculateBar = () => {
     const width_bar = (slider.value * width) / 1000;
-    bar.style.width = width_bar + 'px';
-}
+    bar.style.width = (width_bar / width) * 100 + "%";
+  };
 
 // bereken de juiste width voor de lengte en verandert het als het scherm verandert
 

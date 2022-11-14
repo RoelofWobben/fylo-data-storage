@@ -114,7 +114,19 @@ p{
     z-index: 4;
     height: 18px;
     border-radius: 25px;
+    transition-property: scaleX(1); 
+    transition-duration: 3s;
 }
+
+@keyframes grow-slider {
+    from {
+      transform: scaleX(0);
+    }
+    to {
+      transform: scaleX(1);
+    }
+  }
+
 
 .slider::-webkit-slider-thumb {
     -webkit-appearance: none; /* Override default look */
