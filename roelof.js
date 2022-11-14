@@ -14,29 +14,43 @@ const balloon = document.querySelector('.number')
 
 const width = document.querySelector('.storage-bar').clientWidth; 
 
+// zoek de bar 
+
+const bar = document.querySelector('.storageBarFill')
+
 // verander de tekst als de slider bewogen wordt 
 
 slider.addEventListener('input',  () => {
     // Zet de waarde in de tekst
     tekst.innerHTML = `${slider.value} GB `; 
     // Zet de waarde in de balloon 
-    balloon.innerHTML = `${slider.value}`;
+    balloon.innerHTML = `${(1000 - slider.value).toFixed(1)}`;
     // aanpassen rode balk 
     const width_bar = (slider.value * width) / 1000;
-    document.querySelector('.storageBarFill').style.width = width_bar + 'px';
+    bar.style.width = width_bar + 'px';
 })
+
+
+const calculateBar = () => {
+    const width_bar = (slider.value * width) / 1000;
+    bar.style.width = width_bar + 'px';
+}
 
 // bereken de juiste width voor de lengte en verandert het als het scherm verandert
 
-/*
+
 window.addEventListener('resize', () => {
-    const width_bar = (slider.value * width) / 1000;
-    document.querySelector('.storageBarFill').style.width = width_bar + 'px';
+   calculateBar(); 
 }); 
-*/ 
 
 
+//set the right value on the beginning 
 
+calculateBar();
+
+
+ 
+  
 
 
 

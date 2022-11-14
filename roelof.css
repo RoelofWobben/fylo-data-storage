@@ -114,7 +114,6 @@ p{
     z-index: 4;
     height: 18px;
     border-radius: 25px;
-    padding: 1px;
 }
 
 .slider::-webkit-slider-thumb {
@@ -148,7 +147,7 @@ p{
     position: absolute;
     margin-bottom: -450px;  
     background-color: white;
-    width: 200px;
+    width: 250px;
     border-radius: 10px;
     padding-left: 20px;
     padding-right: 20px; 
@@ -170,7 +169,13 @@ p{
     margin-top: 25px; 
   }
 
-  @media screen and (min-width: 1000px){
+  .animate {
+    width: 100%; 
+    transition: 3s; 
+  }
+
+
+   @media screen and (min-width: 1000px){
 
     body{
         background: var(--very_dark_blue) url('./images/bg-desktop.png') bottom left no-repeat;
@@ -194,8 +199,6 @@ p{
         width: 400px;
         padding-top: 80px;
         border-top-right-radius: 120px;   
-
-     
     }
 
     .data {
@@ -208,17 +211,13 @@ p{
         width: 540px; 
     }
 
-    .storageBarFill {
-        transition: 2s; 
-    }
-
     .slider{
         width: 540px; 
     }
 
     .output_box{
         position: absolute;
-        left: 960px; 
+        left: 1200px;  
         top: 375px; 
         padding-bottom: 0px; 
     }
