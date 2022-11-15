@@ -45,6 +45,8 @@ window.addEventListener('resize', () => {
 //set the right value on the beginning 
 
 calculateBar();
+bar.classList.add("storageBarFill-animation");
+setTimeout(() => bar.classList.remove("storageBarFill-animation"), 1000)
 
 
  

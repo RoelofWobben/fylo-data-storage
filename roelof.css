@@ -3,6 +3,8 @@
     --grayish_blue: hsl(229, 7%, 55%); 
     --dark_blue: hsl(228, 56%, 26%); 
     --very_dark_blue: hsl(229, 57%, 11%);
+
+    --bar_width: 81.5%; 
 }
 
 * {
@@ -114,19 +116,20 @@ p{
     z-index: 4;
     height: 18px;
     border-radius: 25px;
-    animation: grow-slider 3s normal forwards ease-in-out;
-    transform-origin: left;
 }
 
-@keyframes grow-slider {
+.storageBarFill-animation { /* change the name to something more sensible if you want */
+    animation: grow-slider 1s normal forwards ease-in-out;
+  }
+  
+  @keyframes grow-slider {
     from {
-      transform: scaleX(0);
+      width: 0;
     }
     to {
-      transform: scaleX(1);
+      width: var(--bar_width); /* change me if you end up changing the input's starting value */
     }
   }
-
 
 .slider::-webkit-slider-thumb {
     -webkit-appearance: none; /* Override default look */
