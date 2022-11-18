@@ -32,10 +32,11 @@ slider.addEventListener('input',  () => {
 const calculateBar = () => {
     const width_bar = (slider.value * width) / 1000;
     bar.style.width = (width_bar / width) * 100 + "%";
-  };
+    // verander width van de animatie 
+    document.documentElement.style.setProperty('--bar_width', (width_bar/width) * 100 + "%"); 
+};
 
 // bereken de juiste width voor de lengte en verandert het als het scherm verandert
-
 
 window.addEventListener('resize', () => {
    calculateBar(); 
@@ -46,7 +47,8 @@ window.addEventListener('resize', () => {
 
 calculateBar();
 bar.classList.add("storageBarFill-animation");
-setTimeout(() => bar.classList.remove("storageBarFill-animation"), 1000)
+setTimeout(() => bar.classList.remove("storageBarFill-animation"), 35000)
+
 
 
  

@@ -118,16 +118,17 @@ p{
     border-radius: 25px;
 }
 
-.storageBarFill-animation { /* change the name to something more sensible if you want */
-    animation: grow-slider 1s normal forwards ease-in-out;
+.storageBarFill-animation { 
+    animation: grow-slider 3s normal forwards ease-in-out;
   }
   
   @keyframes grow-slider {
     from {
       width: 0;
+      
     }
     to {
-      width: var(--bar_width); /* change me if you end up changing the input's starting value */
+      width: var(--bar_width);
     }
   }
 
@@ -253,9 +254,4 @@ p{
     .numbers {
         width: 520px; 
     }
-
-   
-
-    
-
 }
